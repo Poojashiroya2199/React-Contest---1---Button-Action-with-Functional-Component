@@ -2,7 +2,7 @@ import React, { Component, useState } from "react";
 import "./../styles/App.css";
 
 function App() {
-  let chek = false;
+  let chek = "false";
   const handleclick = () => {
     return (
       <p id="para">
@@ -15,8 +15,8 @@ function App() {
     <>
       <div id="main">
         {/*Do not alter the main div*/}
-        <button id="click" onClick={(chek = true)}>
-          {chek ? { handleclick } : ""}
+        <button id="click" onClick={(chek = "true")}>
+          {chek === "true" ? { handleclick } : ""}
         </button>
       </div>
     </>
